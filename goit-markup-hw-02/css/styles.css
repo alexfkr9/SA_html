@@ -1,0 +1,70 @@
+/* колір основного тексту  #212121 */
+
+/* вторичний колір тексту  #757575 */
+
+/* білий колір тексту  #FFFFFF */
+
+/*  акцент  #2196F3 */
+
+/* колір основного фону  #FFFFFF */
+
+/* вторичний колір фону  #2F303A */
+
+/*  фон-акцент #F5F4FA; */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --white-text-color: #FFFFFF;
+    --title-text-color: ;
+    --accent-color: #2196F3;
+}
+
+body {
+    color: #212121;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    color: #2196F3;
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav .current,
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.description {
+    color: var(--secondary-text-color);
+}
+
+.button {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+/* колір основного тексту  #212121 */
+
+/* вторичний колір тексту  #757575 */
+
+/* білий колір тексту  #FFFFFF */
+
+/*  акцент  #2196F3 */
+
+/* колір основного фону  #FFFFFF */
+
+/* вторичний колір фону  #2F303A */
+
+/*  фон-акцент #F5F4FA; */
+
+
+/* стили для index.html */
+
+/* стили для portfolio.html */
