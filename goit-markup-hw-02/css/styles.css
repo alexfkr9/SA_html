@@ -10,27 +10,46 @@
 
 /* вторичний колір фону  #2F303A */
 
-/*  фон-акцент #F5F4FA; */
+/*  фон кнопки фильтра #F5F4FA; */
 
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
-    --white-text-color: #FFFFFF;
-    --title-text-color: ;
+    --third-text-color: #FFFFFF99;   
+
+    --primary-fone-color: #FFFFFF;
+    --secondary-fone-color: #2F303A;
     --accent-color: #2196F3;
+    
+    --filter-button-fone: #F5F4FA;
 }
 
 body {
-    color: #212121;
-    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    background-color: var(--primary-fone-color);
+
+    font-family: Roboto, sans-serif;
 }
 
-.logo {
-    color: #2196F3;
+
+.list { list-style: none; }
+
+.logo { 
+    color: var(--primary-text-color);
+    text-decoration: none;    
 }
 
-.list {
-    list-style: none;
+.font-logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.logo-accent { color: var(--accent-color); }
+
+.site-nav a {
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 .site-nav .current,
@@ -39,32 +58,68 @@ body {
     color: var(--accent-color);
 }
 
-.description {
+.contact-nav a {
     color: var(--secondary-text-color);
+    text-decoration: none;
 }
 
-.button {
-    color: var(--white-text-color);
+.contact-nav a:hover,
+.contact-nav a:focus {
+    color: var(--accent-color);
+}
+
+.herro {    
+    background-color: var(--secondary-fone-color);
+    text-align: center;
+}
+
+.herro .herro-title {
+    color: var(--primary-fone-color);
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.herro .herro-button {
+    color: var(--primary-fone-color);
     background-color: var(--accent-color);
     border-color: transparent;
     border-radius: 4px;
 }
 
-/* колір основного тексту  #212121 */
+/* .section-title {}
+.features {}
+.features-list {} */
 
-/* вторичний колір тексту  #757575 */
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+}
 
-/* білий колір тексту  #FFFFFF */
+.features-list .text { color: var(--secondary-text-color); }
 
-/*  акцент  #2196F3 */
-
-/* колір основного фону  #FFFFFF */
-
-/* вторичний колір фону  #2F303A */
-
-/*  фон-акцент #F5F4FA; */
+/* .engage .title {}
+.engage-list {}
+.team {} */
 
 
-/* стили для index.html */
+.footer { background-color: var(--secondary-fone-color); }
 
-/* стили для portfolio.html */
+.footer .prime-color { color: var(--primary-fone-color); }
+
+.footer .prime-color { color: var(--primary-fone-color); }
+
+.footer .third-color { color: var(--third-text-color); }
+
+.footer a { text-decoration: none; }
+
+/* portfolio */
+
+.filter .filter-button {
+    color: var(--primary-text-color);
+    background-color: var(--filter-button-fone);
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+.project .project-text { color: var(--secondary-text-color); }

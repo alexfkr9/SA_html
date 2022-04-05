@@ -4,6 +4,10 @@
         <title>HTML Page</title>
         <meta name="description" content="Our first page" />
         <meta name="keywords" content="html page" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
 
@@ -11,7 +15,9 @@
         <!-- Шапка сторінки -->
         <header>
             <nav>
-                <a href="/"><span class="logo">Web</span>Studio</a>
+                <a href="/" class="logo font-logo">
+                    <span class="logo-accent">Web</span>Studio
+                </a>
                 <ul class="site-nav list">
                     <li><a href="/" class="current">Студия</a></li>
                     <li><a href="./portfolio.html">Портфолио</a></li>
@@ -33,35 +39,37 @@
                 <h1 class="herro-title">
                     Эффективные решения<br />для вашего бизнеса
                 </h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="herro-button">
+                    Заказать услугу
+                </button>
             </section>
 
             <section class="features">
-                <ul>
+                <ul class="features-list list">
                     <li>
-                        <h3>Внимание к деталям</h3>
-                        <p class="description">
+                        <h3 class="">Внимание к деталям</h3>
+                        <p class="text">
                             Идейные соображения, а также начало повседневной
                             работы по формированию позиции.
                         </p>
                     </li>
                     <li>
-                        <h3>Пунктуальность</h3>
-                        <p class="description">
+                        <h3 class="">Пунктуальность</h3>
+                        <p class="text">
                             Задача организации, в особенности же рамки и место
                             обучения кадров влечет за собой.
                         </p>
                     </li>
                     <li>
-                        <h3>Планирование</h3>
-                        <p class="description">
+                        <h3 class="">Планирование</h3>
+                        <p class="text">
                             Равным образом консультация с широким активом в
                             значительной степени обуславливает.
                         </p>
                     </li>
                     <li>
-                        <h3>Современные технологии</h3>
-                        <p class="description">
+                        <h3 class="">Современные технологии</h3>
+                        <p class="text">
                             Значимость этих проблем настолько очевидна, что
                             реализация плановых заданий.
                         </p>
@@ -70,9 +78,9 @@
             </section>
 
             <!-- Чем мы занимаемся -->
-            <section class="section engage">
-                <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul>
+            <section class="engage">
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="engage-list list">
                     <li>
                         <a href="/"
                             ><img
@@ -102,8 +110,8 @@
 
             <!-- Наша команда -->
             <section class="team">
-                <h2 class="section-title">Наша команда</h2>
-                <ul>
+                <h2 class="title">Наша команда</h2>
+                <ul class="team-list list">
                     <li>
                         <figure>
                             <img
@@ -161,16 +169,22 @@
         </main>
 
         <!-- Підвал сторінки -->
-        <footer>
-            <a href="/"> <span>Web</span>Studio </a>
+        <footer class="footer">
+            <a href="/" class="prime-color font-logo">
+                <span class="logo-accent">Web</span>Studio
+            </a>
             <address>
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-                <ul>
+                <p class="prime-color">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="contact-nav list">
                     <li>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="mailto:info@devstudio.com" class="third-color"
+                            >info@devstudio.com</a
+                        >
                     </li>
                     <li>
-                        <a href="tel:+38-099-111-11-11">+38 099 111 11 11</a>
+                        <a href="tel:+38-096-111-11-11" class="third-color"
+                            >+38 096 111 11 11</a
+                        >
                     </li>
                 </ul>
             </address>

@@ -4,6 +4,10 @@
         <title>HTML Page</title>
         <meta name="description" content="Portfolio page" />
         <meta name="keywords" content="html page" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
 
@@ -11,7 +15,9 @@
         <!-- Шапка сторінки -->
         <header>
             <nav>
-                <a href="/"><span class="logo">Web</span>Studio</a>
+                <a href="/" class="logo font-logo">
+                    <span class="logo-accent">Web</span>Studio
+                </a>
                 <ul class="site-nav list">
                     <li><a href="./index.html">Студия</a></li>
                     <li><a href="" class="current">Портфолио</a></li>
@@ -29,26 +35,44 @@
         <!-- Унікальний контент сторінки -->
         <main>
             <!-- Фільтри -->
-            <nav class="filters">
-                <ul>
-                    <li><button type="button">Все</button></li>
-                    <li><button type="button">Веб-сайты</button></li>
-                    <li><button type="button">Приложения</button></li>
-                    <li><button type="button">Дизайн</button></li>
-                    <li><button type="button">Маркетинг</button></li>
+            <nav class="filter">
+                <ul class="list">
+                    <li>
+                        <button type="button" class="filter-button">Все</button>
+                    </li>
+                    <li>
+                        <button type="button" class="filter-button">
+                            Веб-сайты
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="filter-button">
+                            Приложения
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="filter-button">
+                            Дизайн
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="filter-button">
+                            Маркетинг
+                        </button>
+                    </li>
                 </ul>
             </nav>
 
             <!-- Проeкти -->
-            <ul class="projects">
+            <ul class="project list">
                 <li>
                     <img
                         src="./images/technokrjak.jpg"
                         alt="Наши проекты"
                         width="370"
                     />
-                    <h3>Технокряк</h3>
-                    <p>Веб-сайт</p>
+                    <h3 class="project-title">Технокряк</h3>
+                    <p class="project-text">Веб-сайт</p>
                 </li>
                 <li>
                     <figure>
@@ -58,8 +82,10 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Постер New Orlean vs Golden Star</b>
-                            <p>Дизайн</p>
+                            <h3 class="project-title">
+                                Постер New Orlean vs Golden Star
+                            </h3>
+                            <p class="project-text">Дизайн</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -71,8 +97,8 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Ресторан Seafood</b>
-                            <p>Приложение</p>
+                            <h3 class="project-title">Ресторан Seafood</h3>
+                            <p class="project-text">Приложение</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -85,8 +111,8 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Проект Prime</b>
-                            <p>Маркетинг</p>
+                            <h3 class="project-title">Проект Prime</h3>
+                            <p class="project-text">Маркетинг</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -98,8 +124,8 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Проект Boxes</b>
-                            <p>Приложение</p>
+                            <h3 class="project-title">Проект Boxes</h3>
+                            <p class="project-text">Приложение</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -111,8 +137,10 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Inspiration has no Borders</b>
-                            <p>Веб-сайт</p>
+                            <h3 class="project-title">
+                                Inspiration has no Borders
+                            </h3>
+                            <p class="project-text">Веб-сайт</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -125,8 +153,10 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Издание Limited Edition</b>
-                            <p>Дизайн</p>
+                            <h3 class="project-title">
+                                Издание Limited Edition
+                            </h3>
+                            <p class="project-text">Дизайн</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -138,8 +168,8 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Проект LAB</b>
-                            <p>Маркетинг</p>
+                            <h3 class="project-title">Проект LAB</h3>
+                            <p class="project-text">Маркетинг</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -151,8 +181,8 @@
                             width="370"
                         />
                         <figcaption>
-                            <b>Growing Business</b>
-                            <p>Приложение</p>
+                            <h3 class="project-title">Growing Business</h3>
+                            <p class="project-text">Приложение</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -160,16 +190,22 @@
         </main>
 
         <!-- Підвал сторінки -->
-        <footer>
-            <a href="/"> <span>Web</span>Studio </a>
+        <footer class="footer">
+            <a href="/" class="prime-color font-logo">
+                <span class="logo-accent">Web</span>Studio
+            </a>
             <address>
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-                <ul>
+                <p class="prime-color">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="contact-nav list">
                     <li>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="mailto:info@devstudio.com" class="third-color"
+                            >info@devstudio.com</a
+                        >
                     </li>
                     <li>
-                        <a href="tel:+38-099-111-11-11">+38 099 111 11 11</a>
+                        <a href="tel:+38-096-111-11-11" class="third-color"
+                            >+38 096 111 11 11</a
+                        >
                     </li>
                 </ul>
             </address>
