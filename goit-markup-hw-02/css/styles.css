@@ -29,8 +29,8 @@ body {
     background-color: var(--primary-fone-color);
 
     font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
-
 
 .list { list-style: none; }
 
@@ -40,9 +40,10 @@ body {
 }
 
 .font-logo {
-    font-family: Raleway, sans-serif;
+    font-family: Raleway, sans-serif;    
     font-weight: 700;
     font-size: 26px;
+    line-height: 1.2;    
 }
 
 .logo-accent { color: var(--accent-color); }
@@ -50,6 +51,11 @@ body {
 .site-nav a {
     color: var(--primary-text-color);
     text-decoration: none;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02;
 }
 
 .site-nav .current,
@@ -60,7 +66,12 @@ body {
 
 .contact-nav a {
     color: var(--secondary-text-color);
-    text-decoration: none;
+    text-decoration: none;    
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .contact-nav a:hover,
@@ -75,8 +86,14 @@ body {
 
 .herro .herro-title {
     color: var(--primary-fone-color);
+    
     font-weight: 900;
     font-size: 44px;
+    line-height: 1.36;     
+
+    text-align: center;    
+    text-transform: uppercase;    
+    letter-spacing: 0.06em;
 }
 
 .herro .herro-button {
@@ -84,32 +101,66 @@ body {
     background-color: var(--accent-color);
     border-color: transparent;
     border-radius: 4px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;        
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 
-/* .section-title {}
-.features {}
-.features-list {} */
+.features-title {    
+    font-size: 14px;
+    line-height: 1.14;
+    
+    text-transform: uppercase;
+}
 
-.title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
+.features-text { 
+    font-size: 14px;
+    line-height: 1.71;    
 }
 
 .features-list .text { color: var(--secondary-text-color); }
 
-/* .engage .title {}
-.engage-list {}
-.team {} */
+/* engage, team */
+.title {
+    font-size: 36px;
+    line-height: 1.17;   
+}
 
+/* team */
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;    
+}
+
+.team-description {
+    font-size: 16px;
+    line-height: 1.19;    
+}
 
 .footer { background-color: var(--secondary-fone-color); }
 
 .footer .prime-color { color: var(--primary-fone-color); }
 
-.footer .prime-color { color: var(--primary-fone-color); }
-
 .footer .third-color { color: var(--third-text-color); }
+
+.footer .third-color:hover,
+.footer .third-color:focus {
+    color: var(--accent-color);
+}
+
+.footer .adds {
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
 
 .footer a { text-decoration: none; }
 
@@ -120,6 +171,24 @@ body {
     background-color: var(--filter-button-fone);
     border-color: transparent;
     border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    text-align: center;
+    cursor: pointer;
 }
 
-.project .project-text { color: var(--secondary-text-color); }
+.project .project-title {    
+    font-size: 18px;
+    line-height: 2;    
+    letter-spacing: 0.06em;
+}
+
+.project .project-text { 
+    color: var(--secondary-text-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+}
