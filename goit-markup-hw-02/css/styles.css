@@ -17,16 +17,16 @@
     --secondary-text-color: #757575;
     --third-text-color: #FFFFFF99;   
 
-    --primary-fone-color: #FFFFFF;
-    --secondary-fone-color: #2F303A;
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #2F303A;
     --accent-color: #2196F3;
     
-    --filter-button-fone: #F5F4FA;
+    --filter-button-bg: #F5F4FA;
 }
 
 body {
     color: var(--primary-text-color);
-    background-color: var(--primary-fone-color);
+    background-color: var(--primary-bg-color);
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -80,12 +80,12 @@ body {
 }
 
 .herro {    
-    background-color: var(--secondary-fone-color);
+    background-color: var(--secondary-bg-color);
     text-align: center;
 }
 
 .herro .herro-title {
-    color: var(--primary-fone-color);
+    color: var(--primary-bg-color);
     
     font-weight: 900;
     font-size: 44px;
@@ -97,19 +97,26 @@ body {
 }
 
 .herro .herro-button {
-    color: var(--primary-fone-color);
+    color: var(--primary-bg-color);
     background-color: var(--accent-color);
     border-color: transparent;
     border-radius: 4px;
     
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;        
     
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em;   
+}
 
+.herro .herro-button:hover,
+.herro .herro-button:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
@@ -121,11 +128,11 @@ body {
 }
 
 .features-text { 
+    color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.71;    
 }
 
-.features-list .text { color: var(--secondary-text-color); }
 
 /* engage, team */
 .title {
@@ -141,13 +148,14 @@ body {
 }
 
 .team-description {
+    color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;    
 }
 
-.footer { background-color: var(--secondary-fone-color); }
+.footer { background-color: var(--secondary-bg-color); }
 
-.footer .prime-color { color: var(--primary-fone-color); }
+.footer .prime-color { color: var(--primary-bg-color); }
 
 .footer .third-color { color: var(--third-text-color); }
 
@@ -168,21 +176,30 @@ body {
 
 .filter .filter-button {
     color: var(--primary-text-color);
-    background-color: var(--filter-button-fone);
+    background-color: var(--filter-button-bg);
     border-color: transparent;
     border-radius: 4px;
 
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 
-    text-align: center;
+    text-align: center;    
+}
+
+.filter .filter-button:hover,
+.filter .filter-button:focus {
+    color: var(--filter-button-bg);
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+
     cursor: pointer;
 }
 
 .project .project-title {    
     font-size: 18px;
-    line-height: 2;    
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 
