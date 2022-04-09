@@ -19,9 +19,9 @@
 
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
+    --third-bg-color: #F5F4FA;
+
     --accent-color: #2196F3;
-    
-    --filter-button-bg: #F5F4FA;
 }
 
 body {
@@ -141,6 +141,8 @@ body {
 }
 
 /* team */
+.team { background-color: var(--third-bg-color); }
+
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -176,7 +178,7 @@ body {
 
 .filter .filter-button {
     color: var(--primary-text-color);
-    background-color: var(--filter-button-bg);
+    background-color: var(--third-bg-color);
     border-color: transparent;
     border-radius: 4px;
 
@@ -190,7 +192,7 @@ body {
 
 .filter .filter-button:hover,
 .filter .filter-button:focus {
-    color: var(--filter-button-bg);
+    color: var(--third-bg-color);
     background-color: var(--accent-color);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 
