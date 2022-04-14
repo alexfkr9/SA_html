@@ -246,6 +246,7 @@ body {
 .team .card {
     padding-bottom: 30px;
     text-align: center;
+    background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -364,16 +365,20 @@ body {
 
 .project .item:nth-child(3n) { margin-right: 0; }
 
-.project .card {     
-    box-shadow: inset 0 0 0 1px #EEEEEE;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-}
+.project .card { margin-bottom: 30px; }
 
-.project .card>img { margin-bottom: 20px; }
+.project .card>img { display: block; }
+
+.project .card>figcaption {   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px #EEEEEE;
+    border-style: none solid solid solid;
+}
 
 .project .project-title {
     margin: 0;
+    margin-bottom: 2px;
     padding-left: 24px;   
 
     font-size: 18px;
