@@ -361,6 +361,7 @@ body {
 .project .item {
     width: 370px;
     margin-right: 30px;
+    background-color: var(--primary-bg-color);
 }
 
 .project .item:nth-child(3n) { margin-right: 0; }
