@@ -98,8 +98,8 @@ body {
 }
 
 .site-nav a {
-    display: block;
     position: relative;
+    display: block;
     color: var(--primary-text-color);
     text-decoration: none;
 
@@ -238,6 +238,51 @@ body {
     cursor: pointer;
 }
 
+/* modal */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    padding: 15px;
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+/* close icon */
+.close-icon {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+}
+
+.close-icon:hover {
+    cursor: pointer;
+}
+
 /* features,  team */
 
 .features-list,
@@ -300,7 +345,6 @@ body {
 
 .engage .list {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .engage .list .item {
@@ -310,6 +354,36 @@ body {
 
 .engage .list .item:last-child {
     margin-right: 0;
+}
+
+.engage .item {
+    position: relative;
+}
+
+.engage img {
+    display: block;
+}
+
+.engage-overley {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-bg-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.engage-overley p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
+    text-transform: uppercase;
 }
 
 /* team */
@@ -353,8 +427,6 @@ body {
 
 .social li {
     margin-right: 10px;
-
-    /* font-size: 0; */
 }
 
 .social li:last-child {
@@ -362,7 +434,13 @@ body {
 }
 
 .social svg {
+    display: block;
+}
+
+.social a {
+    display: block;
     fill: #afb1b8;
+
     border-radius: 50%;
 
     transition-property: fill, background-color;
@@ -370,13 +448,7 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social svg:hover,
-.social svg:focus {
-    fill: var(--primary-bg-color);
-    background-color: var(--accent-color);
-}
-
-.social svg use:focus,
+.social a:hover,
 .social a:focus {
     fill: var(--primary-bg-color);
     background-color: var(--accent-color);
@@ -398,6 +470,11 @@ body {
 }
 
 .client .item svg {
+    display: block;
+}
+
+.client .item a {
+    display: block;
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -407,8 +484,8 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client .item svg:hover,
-.client .item svg:focus {
+.client .item a:hover,
+.client .item a:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -554,6 +631,7 @@ body {
 .project .item {
     width: 370px;
     margin-right: 30px;
+    margin-bottom: 30px;
     background-color: var(--primary-bg-color);
 }
 
@@ -562,29 +640,10 @@ body {
 }
 
 .project .card {
-    display: block;
-    position: relative;
-    margin-bottom: 30px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
 }
 
-.project .card::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 294px;
-    background-color: #5b699faa;
-    transform: translateY(294px);
-    transition-property: transform;
-    transition-duration: 1250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project a:hover .card::before {
+.project .card:hover .project-overley {
     transform: translateY(0);
 }
 
@@ -594,16 +653,40 @@ body {
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project .card > img {
+.project-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overley {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-overley p {
+    padding: 63px 24px;
+    color: var(--primary-bg-color);
+    font-size: 18px;
+    line-height: 1.56;
+}
+
+.project img {
     display: block;
 }
 
-.project .card > figcaption {
+.project figcaption {
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px #eeeeee;
     border-style: none solid solid solid;
-    /* background-color: #41b6c449; */
 }
 
 .project .project-title {
@@ -623,5 +706,4 @@ body {
 
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
 }

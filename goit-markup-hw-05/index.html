@@ -73,9 +73,23 @@
                 <h1 class="herro-title">
                     Эффективные решения<br />для вашего бизнеса
                 </h1>
-                <button class="herro-button" type="button">
+                <button class="herro-button" type="button" data-modal-open>
                     Заказать услугу
                 </button>
+
+                <!-- modal -->
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <svg
+                            class="close-icon"
+                            width="30"
+                            height="30"
+                            data-modal-close
+                        >
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                </div>
             </section>
 
             <section class="features section">
@@ -144,6 +158,9 @@
                                 alt="Наши проекты"
                                 width="370"
                             />
+                            <div class="engage-overley">
+                                <p>Десктопные приложения</p>
+                            </div>
                         </li>
                         <li class="item">
                             <img
@@ -151,6 +168,9 @@
                                 alt="Наши проекты"
                                 width="370"
                             />
+                            <div class="engage-overley">
+                                <p>Мобильные приложения</p>
+                            </div>
                         </li>
                         <li class="item">
                             <img
@@ -158,6 +178,9 @@
                                 alt="Наши проекты"
                                 width="370"
                             />
+                            <div class="engage-overley">
+                                <p>Дизайнерские решения</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -597,5 +620,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
