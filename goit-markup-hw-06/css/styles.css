@@ -2,9 +2,7 @@ html { box-sizing: border-box; }
 
 *,
 *::before,
-*::after {
-    box-sizing: inherit;
-}
+*::after { box-sizing: inherit; }
 
 :root {
     --primary-text-color: #212121;
@@ -115,17 +113,11 @@ body {
 
 .site-nav .current,
 .site-nav a:hover,
-.site-nav a:focus {
-    color: var(--accent-color);
-}
+.site-nav a:focus { color: var(--accent-color); }
 
-.contact-nav {
-    display: flex;
-}
+.contact-nav { display: flex; }
 
-.contact-nav li:first-child {
-    margin-right: 30px;
-}
+.contact-nav li:first-child { margin-right: 30px; }
 
 .contact-nav a {
     display: inline-flex;
@@ -150,9 +142,7 @@ body {
 }
 
 .envelope-icon,
-.smartphone-icon {
-    margin: auto 10px auto 0;
-}
+.smartphone-icon { margin: auto 10px auto 0; }
 
 /* herro */
 
@@ -254,17 +244,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    height: 581px;    
+    height: 581px;
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;    
+    border-radius: 4px;
 }
 
 /* form */
 
 /* close icon */
-.icon-close {    
+.icon-close {
     fill: var(--primary-bg-color);
     stroke: var(--primary-text-color);
     position: absolute;
@@ -274,27 +264,27 @@ body {
 }
 
 .icon-close:hover {
-    stroke: var(--accent-color);  
-    cursor: pointer;    
+    stroke: var(--accent-color);
+    cursor: pointer;
 }
 
 .form { padding: 40px; }
 
 .form-title {
-    margin: 0 0 12px;    
+    margin: 0 0 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
 }
 
-.form .form-field {    
+.form .form-field {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
-.form .form-field label {    
+.form .form-field label {
     text-align: left;
     margin-bottom: 4px;
     font-size: 12px;
@@ -322,23 +312,20 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form .form-input:hover {     
-    border-color: var(--accent-color); 
-    cursor: pointer;    
+.form .form-input:hover {
+    border-color: var(--accent-color);
+    cursor: pointer;
 }
 
-.form .form-input:focus { 
-    border-color: var(--accent-color);     
-}
+.form .form-input:focus { border-color: var(--accent-color); }
 
 .form-input:hover + .icon,
-.form-input:focus + .icon {    
-    fill: var(--accent-color);    
+.form-input:focus + .icon {
+    fill: var(--accent-color);
 }
 
-
-.form-field textarea {  
-    margin-bottom: 10px;  
+.form-field textarea {
+    margin-bottom: 10px;
     padding: 12px 16px;
     resize: none;
 
@@ -348,15 +335,15 @@ body {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
-    border-radius: 4px;  
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form .form-field textarea::placeholder {    
+.form .form-field textarea::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);    
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .form-field textarea:hover,
@@ -365,13 +352,13 @@ body {
     outline: none;
 }
 
-.form .checkbox {    
-    position: relative;    
+.form .checkbox {
+    position: relative;
     margin-bottom: 30px;
-    display: block;    
+    padding-left: 2px;
 }
 
-.checkbox-label {    
+.checkbox-label {
     font-size: 14px;
     line-height: 1.71;
     padding-left: 20px;
@@ -383,49 +370,35 @@ body {
 .checkbox-label a {
     text-decoration: none;
     border-bottom: 1px solid var(--accent-color);
-    color: var(--accent-color);   
+    color: var(--accent-color);
 }
 
 .checkbox-input,
 .checkbox-input:focus {
-    appearance: none;    
-    /* opacity: 0;     */
+    appearance: none;
 }
 
 .checkbox-icon {
     position: absolute;
     top: 4px;
-    left: 14px;
-    
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--primary-text-color);
-    border-radius: 2px;
+    left: 11px;
 
-    
     pointer-events: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked + .checkbox-icon {    
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);    
+.checkbox-input:checked + .checkbox-icon { background-color: var(--accent-color); }
+
+.checkbox-input:not(:checked) + .checkbox-icon {
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
 }
 
-.icon-check {   
-    position: absolute;
-    top: -2px;
-    left: -2px;    
-    /* background-size: contain;
-    background-origin: border-box; */
-
-}
-
-.form-button {    
+.form-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    
+
     letter-spacing: 0.06em;
 
     color: var(--primary-bg-color);
@@ -440,7 +413,7 @@ body {
 }
 
 .form-button:hover {
-    background-color: #188CE8;
+    background-color: #188ce8;
     cursor: pointer;
 }
 
@@ -499,8 +472,8 @@ body {
 }
 
 /* engage */
- 
-.engage .list { display: flex;}
+
+.engage .list { display: flex; }
 
 .engage .list .item {
     width: 370px;
@@ -625,7 +598,7 @@ body {
 
 /* footer */
 
-.footer {    
+.footer {
     padding-top: 0;
     padding-bottom: 60px;
     background-color: var(--secondary-bg-color);
@@ -672,7 +645,7 @@ body {
 
 .footer-social {
     padding-top: 72px;
-    margin-right: 93px;    
+    margin-right: 93px;
 }
 
 .footer .title {
@@ -716,18 +689,18 @@ body {
     padding: 15px 158px 15px 16px;
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);    
-   
-    border-radius: 4px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    border-radius: 4px;
     color: var(--primary-bg-color);
     font-size: 16px;
-    line-height: 1.25;    
+    line-height: 1.25;
 }
 
 .footer-input::placeholder { color: rgba(255, 255, 255, 0.6); }
 
-.footer .form-button {     
-    text-align: center;    
+.footer .form-button {
+    text-align: center;
     padding: 10px 28px;
     font-weight: 700;
     font-size: 16px;
@@ -735,12 +708,10 @@ body {
     letter-spacing: 0.06em;
 }
 
-.icon-send { 
+.icon-send {
     vertical-align: middle;
     margin-left: 5px;
- }
-
-
+}
 
 /* portfolio */
 
