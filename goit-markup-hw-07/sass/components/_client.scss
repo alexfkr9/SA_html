@@ -1,0 +1,20 @@
+.client {
+    display: flex;
+    justify-content: center;
+    &__item { margin-right: 30px; }
+    &__item:last-child { margin-right: 0; }
+    &__link {
+        display: block;
+        fill: #afb1b8;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        transition-property: fill, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &__link:focus {
+        fill: $accent-color;
+        border-color: $accent-color;
+    }
+}
