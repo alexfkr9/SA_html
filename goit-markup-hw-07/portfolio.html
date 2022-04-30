@@ -26,20 +26,26 @@
                     <a class="logo font-logo" href="/">
                         <span class="logo-accent">Web</span>Studio
                     </a>
+
                     <ul class="site-nav list">
-                        <li class="item">
-                            <a href="./index.html">Студия</a>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="./index.html">Студия</a>
                         </li>
-                        <li class="item">
-                            <a class="current" href="">Портфолио</a>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link site-nav__link--current" href=""
+                                >Портфолио</a
+                            >
                         </li>
-                        <li class="item"><a href="">Контакты</a></li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
+
                 <ul class="contact-nav list">
-                    <li>
-                        <a href="mailto:info@devstudio.com">
-                            <svg class="envelope-icon" width="16" height="12">
+                    <li class="contact-nav__item">
+                        <a class="contact-nav__link" href="mailto:info@devstudio.com">
+                            <svg class="contact-nav__icon" width="16" height="12">
                                 <use
                                     href="./images/icons.svg#icon-envelope"
                                 ></use>
@@ -48,8 +54,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+38-096-111-11-11">
-                            <svg class="smartphone-icon" width="10" height="16">
+                        <a class="contact-nav__link" href="tel:+38-096-111-11-11">
+                            <svg class="contact-nav__icon" width="10" height="16">
                                 <use
                                     href="./images/icons.svg#icon-smartphone"
                                 ></use>
@@ -66,29 +72,29 @@
             <!-- Фільтри -->
             <div class="container">
                 <nav class="filter">
-                    <ul class="list">
-                        <li class="item">
-                            <button class="filter-button" type="button">
+                    <ul class="filter__list list">        <!-- mix  -->
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">
                                 Все
                             </button>
                         </li>
-                        <li class="item">
-                            <button class="filter-button" type="button">
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">
                                 Веб-сайты
                             </button>
                         </li>
-                        <li class="item">
-                            <button class="filter-button" type="button">
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">
                                 Приложения
                             </button>
                         </li>
-                        <li class="item">
-                            <button class="filter-button" type="button">
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">
                                 Дизайн
                             </button>
                         </li>
-                        <li class="item">
-                            <button class="filter-button" type="button">
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">
                                 Маркетинг
                             </button>
                         </li>
@@ -97,17 +103,17 @@
 
                 <!-- Проeкти -->
 
-                <ul class="project list">
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                <ul class="card-set list">
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project"> <!-- card margine:0 -->
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/technokrjak.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -118,23 +124,23 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">Технокряк</h3>
-                                    <p class="project-text">Веб-сайт</p>
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">Технокряк</h3>
+                                    <p class="project__text">Веб-сайт</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/neworlean.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -145,25 +151,25 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">
                                         Постер New Orlean vs Golden Star
                                     </h3>
-                                    <p class="project-text">Дизайн</p>
+                                    <p class="project__text">Дизайн</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/seafood.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -174,25 +180,25 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">
                                         Ресторан Seafood
                                     </h3>
-                                    <p class="project-text">Приложение</p>
+                                    <p class="project__text">Приложение</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/prime.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -203,23 +209,23 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">Проект Prime</h3>
-                                    <p class="project-text">Маркетинг</p>
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">Проект Prime</h3>
+                                    <p class="project__text">Маркетинг</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/boxes.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -230,23 +236,23 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">Проект Boxes</h3>
-                                    <p class="project-text">Приложение</p>
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">Проект Boxes</h3>
+                                    <p class="project__text">Приложение</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/inspiration.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -257,25 +263,25 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">
                                         Inspiration has no Borders
                                     </h3>
-                                    <p class="project-text">Веб-сайт</p>
+                                    <p class="project__text">Веб-сайт</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/edition.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -286,25 +292,25 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">
                                         Издание Limited Edition
                                     </h3>
-                                    <p class="project-text">Дизайн</p>
+                                    <p class="project__text">Дизайн</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/lab.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -315,23 +321,23 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">Проект LAB</h3>
-                                    <p class="project-text">Маркетинг</p>
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">Проект LAB</h3>
+                                    <p class="project__text">Маркетинг</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="/">
-                            <figure class="card">
-                                <div class="project-thumb">
-                                    <img
+                    <li class="card-set__item">
+                        <a class="card-set__link" href="/">
+                            <figure class="project">
+                                <div class="project__thumb">
+                                    <img class="project__img"
                                         src="./images/business.jpg"
                                         alt="Наши проекты"
                                         width="370"
                                     />
-                                    <div class="project-overley">
+                                    <div class="project__overley">
                                         <p>
                                             Ресурс предлагает комплексные
                                             предложения с разным уровнем
@@ -342,11 +348,11 @@
                                         </p>
                                     </div>
                                 </div>
-                                <figcaption>
-                                    <h3 class="project-title">
+                                <figcaption class="project__label">
+                                    <h3 class="project__title">
                                         Growing Business
                                     </h3>
-                                    <p class="project-text">Приложение</p>
+                                    <p class="project__text">Приложение</p>
                                 </figcaption>
                             </figure>
                         </a>
@@ -357,28 +363,26 @@
 
         <!-- Підвал сторінки -->
         <footer class="footer">
-            <div class="container flex">
-                <div class="footer-address">
-                    <div class="margin-logo">
-                        <a class="prime-color font-logo" href="/">
-                            <span class="logo-accent">Web</span>Studio
-                        </a>
-                    </div>
-                    <address class="adds">
-                        <p class="prime-color">
+            <div class="container footer__flex">
+                <div class="footer-contact">
+                    <a class="logo footer__logo block" href="/">
+                        <span class="logo--accent">Web</span>Studio
+                    </a>
+                    <address class="footer-contact__data">
+                        <p class="footer-contact__text">
                             г. Киев, пр-т Леси Украинки, 26
                         </p>
                         <ul class="list">
-                            <li class="mail">
+                            <li class="footer-contact__mail">
                                 <a
-                                    class="third-color"
+                                    class="footer-contact__link"
                                     href="mailto:info@devstudio.com"
                                     >info@devstudio.com</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="third-color"
+                                    class="footer-contact__link"
                                     href="tel:+38-096-111-11-11"
                                     >+38 096 111 11 11</a
                                 >
@@ -388,12 +392,12 @@
                 </div>
 
                 <div class="footer-social">
-                    <h3 class="title">присоединяйтесь</h3>
+                    <h3 class="footer__title">присоединяйтесь</h3>
                     <ul class="social flex list">
-                        <li>
-                            <a href="">
+                        <li class="social__icon">
+                            <a class="social__link social__link--footer" href="">
                                 <svg
-                                    class="icon-instagram"
+                                    class="block"
                                     width="44"
                                     height="44"
                                 >
@@ -403,10 +407,10 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
+                        <li class="social__icon">
+                            <a class="social__link social__link--footer" href="">
                                 <svg
-                                    class="icon-twitter"
+                                    class="block"
                                     width="44"
                                     height="44"
                                 >
@@ -416,10 +420,10 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
+                        <li class="social__icon">
+                            <a class="social__link social__link--footer" href="">
                                 <svg
-                                    class="icon-facebook"
+                                    class="block"
                                     width="44"
                                     height="44"
                                 >
@@ -429,10 +433,10 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
+                        <li class="social__icon">
+                            <a class="social__link social__link--footer" href="">
                                 <svg
-                                    class="icon-linkedin"
+                                    class="block"
                                     width="44"
                                     height="44"
                                 >
@@ -446,20 +450,20 @@
                 </div>
 
                 <form class="footer-form">
-                    <h3 class="title">Подпишитесь на рассылку</h3>
-                    <div class="form-field">
+                    <h3 class="footer__title">Подпишитесь на рассылку</h3>
+                    <div class="footer-form__field">
                         <label for="e-mail"></label>
                         <input
-                            class="footer-input"
+                            class="footer-form__input"
                             type="text"
                             name="e-mail"
                             id="e-mail"
                             placeholder="E-mail"
                         />
 
-                        <button class="form-button" type="submit">
+                        <button class="footer-form__button" type="submit">
                             Подписаться
-                            <svg class="icon-send" width="24" height="24">
+                            <svg class="footer-form__icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
