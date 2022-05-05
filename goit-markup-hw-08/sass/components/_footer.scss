@@ -1,22 +1,35 @@
 .footer {
-    padding-top: 0;
-    padding-bottom: 60px;
+    padding: 60px 0;    
     background-color: $secondary-bg-color;
-    &__flex {
-        display: flex;
-        align-items: flex-start;
+
+    text-align: center;
+   
+    @media screen and (min-width: 768px) {      
+
+        &__tablet {
+            display: flex;
+            justify-content: space-between;
+            // padding-left: 76px;
+            // padding-right: 89px;
+        }
+
+        // &__set {
+        //     display: flex;
+        //     align-items: flex-start;
+        //     text-align: left;
+        // }         
     }
 }
 
-.footer__logo {
+.logo--footer {
+    display: block;
     margin: 0;    
     margin-bottom: 20px;
     color: $primary-bg-color;    
 }
 
 .footer-contact {
-    padding-top: 60px;
-    margin-right: 70px;
+    margin-bottom: 60px;
     &__data {
         font-size: 14px;
         line-height: 1.71;
@@ -37,14 +50,33 @@
         color: $accent-color;
     }
     &__mail { margin-bottom: 9px; }
+
+    @media screen and (min-width: 768px) {        
+        padding-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 165px;
+    }  
+
 }
 
 .footer-social {
-    padding-top: 72px;
-    margin-right: 93px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        padding-top: 5px;
+        padding-right: 89px;
+        
+    }    
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }    
+
 }
 
 .footer__title {    
+    
     color: $primary-bg-color;
     margin: 0 0 20px 0;    
     font-weight: 700;
@@ -60,10 +92,16 @@
 
 
 .footer-form { 
-    padding-top: 72px; 
-    &__field { display: flex; }
+    // padding-top: 72px; 
+    // &__field { display: flex; }
     &__input {
-        margin-right: 12px;
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+
+        margin-bottom: 20px;
         padding: 15px 158px 15px 16px;
         background-color: inherit;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -92,4 +130,10 @@
         vertical-align: middle;
         margin-left: 5px;
     }
+
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    } 
+    
 }

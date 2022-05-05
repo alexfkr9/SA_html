@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>HTML Page</title>
+    <head>        
         <meta name="description" content="Portfolio page" />
         <meta name="keywords" content="html page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Page</title>
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
@@ -72,7 +73,7 @@
             <!-- Фільтри -->
             <div class="container">
                 <nav class="filter">
-                    <ul class="filter__list list">        <!-- mix  -->
+                    <ul class="filter__list list">
                         <li class="filter__item">
                             <button class="filter__button" type="button">
                                 Все
@@ -108,7 +109,7 @@
                         <a class="card-set__link" href="/">
                             <figure class="project">
                                 <div class="project__thumb">
-                                    <img class="block"
+                                    <img class="project__image block"
                                         src="./images/technokrjak.jpg"
                                         alt="Наши проекты"
                                         width="370"
@@ -471,5 +472,7 @@
                 </form>
             </div>
         </footer>
+
+        <script src="./js/mobile-menu.js"></script>   
     </body>
 </html>
