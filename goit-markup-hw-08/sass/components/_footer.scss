@@ -8,16 +8,17 @@
 
         &__tablet {
             display: flex;
-            justify-content: space-between;
-            // padding-left: 76px;
-            // padding-right: 89px;
-        }
+            justify-content: space-between;            
+        }             
+    }
 
-        // &__set {
-        //     display: flex;
-        //     align-items: flex-start;
-        //     text-align: left;
-        // }         
+    @media screen and (min-width: 1200px) {
+        &__set {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: left;
+            }         
     }
 }
 
@@ -56,7 +57,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-        margin-right: 165px;
+        margin-bottom: 0;
+        margin-right: 70px;
+        padding-left: 0;
     }  
 
 }
@@ -70,7 +73,10 @@
     }    
 
     @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
         margin-right: 93px;
+        padding-top: 12px;
+        padding-right: 0;
     }    
 
 }
@@ -92,8 +98,8 @@
 
 
 .footer-form { 
-    // padding-top: 72px; 
-    // &__field { display: flex; }
+    padding-top: 12px; 
+    
     &__input {
         
         display: block;
@@ -102,7 +108,7 @@
         max-width: 450px;
 
         margin-bottom: 20px;
-        padding: 15px 158px 15px 16px;
+        padding: 14px 158px 14px 16px;
         background-color: inherit;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -112,7 +118,7 @@
         line-height: 1.25;
     }
     &__input::placeholder { color: rgba(255, 255, 255, 0.6); }
-    &__button {
+    &__button {           
         text-align: center;
         padding: 10px 28px;
         font-weight: 700;
@@ -120,7 +126,10 @@
         line-height: 1.88;
         letter-spacing: 0.06em;
         color: $primary-bg-color;
-        background-color: $accent-color;    
+        background-color: $accent-color;         
+        border: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
     }
     &__button:hover {    
         background-color: #188ce8;
@@ -132,8 +141,15 @@
     }
 
     
-    @media screen and (min-width: 1200px) {
-        margin-right: 12px;
+    @media screen and (min-width: 1200px) {   
+
+        &__field { display: flex; }
+
+        &__input {
+            margin-bottom: 0;
+            margin-right: 12px;
+            max-width: 358px;
+        }
     } 
     
 }

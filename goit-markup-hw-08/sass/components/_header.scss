@@ -1,14 +1,30 @@
 /* header */
 .header {
-    position: relative;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ececec; 
+        
+    border-bottom: 1px solid #ececec;    
     
+    &__set { 
+        position: relative;
+        padding: 15px 0;
+        
+    }
+
+    @media screen and (min-width: 768px) {       
+
+        &__set {  
+            display: flex;    
+            margin: 0;
+            padding: 0;        
+        }
+    }
 }    
 
+body.is-open .logo--mobile { 
+    opacity: 0;
+}
+
 .logo {
-    display: none;
+    // display: block;
     color: $primary-text-color;
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -19,36 +35,41 @@
     &--accent { color: $accent-color; }
 
     @media screen and (min-width: 480px) {
-        display: flex;        
-    
-        margin-right: 93px;
-        
+        display: flex;    
+        margin-right: 93px;        
+        align-items: center;        
     }
+
 }
 
-.menu-container {    
 
+.menu-container {       
+   
     &.is-open {
             display: block;
         } 
 
     @media screen and (max-width: 767px) {
-        // display: none;
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         height: 796px;
         padding-left: 40px;
-        background-color: $primary-bg-color;
+        background-color: $primary-bg-color;         
+        z-index: 2;    
     } 
     
     @media screen and (min-width: 768px) {
         display: flex;
-        
+        align-items: flex-end;
+        // padding-top: 10px;
     }
 
 }
+
+
 
 .menu-button {
     display: inline-flex;
@@ -62,6 +83,7 @@
     border: none;
     fill: $primary-text-color;
     background-color: transparent;
+    z-index: 1;
 
     &:hover { 
         cursor: pointer;
@@ -91,9 +113,13 @@
 .site-nav {    
 
     display: block;
-    margin-bottom: 306px;
+    margin-bottom: 306px;    
 
-    &__item:not(:last-child) { margin-bottom: 32px; }
+    @media screen and (max-width: 767px) {
+        
+        &__item:not(:last-child) { margin-bottom: 32px; }
+    }
+
     &__link {
         color: $primary-text-color;
         text-decoration: none;
@@ -112,8 +138,11 @@
 
     // tablet
     @media screen and (min-width: 768px) {        
-            display: flex;        
-            margin-right: 104px;
+            display: flex;
+            align-items: flex-start;        
+            margin-right: 84px;
+            margin-bottom: 0;
+            padding-bottom: 25px;
 
             &__item { margin-right: 50px; }
             &__item:last-child { margin-right: 0; }
@@ -128,7 +157,7 @@
             &__link--current::after {
                 position: absolute;
                 left: 0;
-                top: 46px;
+                top: 37px;
                 content: "";
                 display: block;
                 width: 100%;
@@ -143,11 +172,12 @@
 
 .contact-nav { 
 
-    display: block;
-    margin-bottom: 64px;
+    display: block;    
     
     &__item:not(:last-child) {
         margin-bottom: 32px;
+        margin: 0;
+        
     }
 
     &__link {
@@ -175,16 +205,30 @@
 
     // tablet
     @media screen and (min-width: 768px) {
-
+        
         display: flex;
+        flex-direction: column-reverse;        
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: flex-end;
 
-        &__item { margin-right: 30px; }
+        &__item { 
+            margin-right: 30px;
+            margin: 0;
+         }
+
+        &__item:last-child { 
+            // margin-left: 10px;           
+            
+         }
+
         &__link {
             display: inline-flex;
 
             font-size: 14px;
             line-height: 1.14;
-            
+            color: $secondary-text-color;
         }
         &__link:hover,
         &__link:focus {
@@ -195,6 +239,13 @@
             display: inline;
             margin: auto 10px auto 0; 
         }
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row-reverse; 
+        align-items: flex-end;
+
+        &__link--envelope { margin-right: 5px;  }
     }
 }
 
