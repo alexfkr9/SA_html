@@ -57,11 +57,9 @@ body.is-open {
   display: block;
 }
 
-@media screen and (max-width: 1199px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -84,14 +82,9 @@ body.is-open {
 .title {
   text-align: center;
   margin-top: 0px;
-}
-
-@media screen and (max-width: 1199px) {
-  .title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.18;
-  }
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
 }
 
 @media screen and (min-width: 1200px) {
@@ -149,25 +142,28 @@ body.is-open .logo--mobile {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1796px;
-    padding-left: 40px;
-    background-color: #ffffff;
-    z-index: 2;
-  }
-  .menu-container.is-open {
-    display: block;
-  }
+.menu-container {
+  display: none;
+  position: absolute;
+  padding-left: 40px;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1796px;
+  z-index: 2;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
   .menu-container {
+    position: static;
+    height: auto;
+    padding-left: 0;
+    z-index: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177,14 +173,13 @@ body.is-open .logo--mobile {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav {
-    display: block;
-    margin-bottom: 306px;
-  }
-  .site-nav__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
+.site-nav {
+  display: block;
+  margin-bottom: 306px;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .site-nav__link {
@@ -207,13 +202,13 @@ body.is-open .logo--mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 84px;
-    margin-right: 82px;
+    margin: 0 82px 0 84px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .site-nav__item {
+  .site-nav .site-nav__item {
     margin-right: 50px;
+    margin-bottom: 0;
   }
   .site-nav__item:last-child {
     margin-right: 0;
@@ -240,7 +235,7 @@ body.is-open .logo--mobile {
 @media screen and (min-width: 1200px) {
   .site-nav {
     margin-left: 93px;
-    margin-right: 297px;
+    margin-right: 295px;
   }
 }
 
@@ -248,12 +243,17 @@ body.is-open .logo--mobile {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+.contact-nav__item {
+  margin-bottom: 32px;
+}
+
+.contact-nav__item:last-child {
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
   .contact-nav__item {
-    margin-bottom: 32px;
-  }
-  .contact-nav__item:last-child {
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 }
 
@@ -262,6 +262,8 @@ body.is-open .logo--mobile {
   fill: currentColor;
   text-decoration: none;
   font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
@@ -271,22 +273,10 @@ body.is-open .logo--mobile {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
-  .contact-nav__link {
-    font-size: 34px;
-    line-height: 1.18;
-  }
-}
-
 .contact-nav__link--envelope {
   color: #757575;
-}
-
-@media screen and (max-width: 767px) {
-  .contact-nav__link--envelope {
-    font-size: 24px;
-    line-height: 1.17;
-  }
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .contact-nav__icon {
@@ -348,6 +338,8 @@ body.is-open .logo--mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-nav__link {
@@ -439,16 +431,16 @@ body.is-open .logo--mobile {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .herro__title {
-    font-size: 26px;
-    line-height: 1.62;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -749,6 +741,7 @@ body.is-open .logo--mobile {
 .features-set__list {
   display: block;
   margin: -15px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -761,9 +754,9 @@ body.is-open .logo--mobile {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .features-set__list {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -816,9 +809,13 @@ body.is-open .logo--mobile {
   line-height: 1.71;
 }
 
-@media screen and (max-width: 1199px) {
+.engage-set {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
   .engage-set {
-    display: none;
+    display: block;
   }
 }
 
@@ -905,7 +902,7 @@ body.is-open .logo--mobile {
   line-height: 1.19;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -925,17 +922,13 @@ body.is-open .logo--mobile {
 }
 
 @media screen and (min-width: 1200px) {
-  .team .team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .team__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .team .team__item {
     max-width: 270px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -1226,10 +1219,8 @@ body.is-open .logo--mobile {
 }
 
 /* portfolio */
-@media screen and (max-width: 767px) {
-  .filter {
-    margin-bottom: 25px;
-  }
+.filter {
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1263,11 +1254,12 @@ body.is-open .logo--mobile {
 .filter__item {
   min-width: 73px;
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .filter__item {
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 }
 

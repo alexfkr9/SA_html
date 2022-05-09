@@ -33,7 +33,7 @@
     }
 
     
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         &__list {
             display: flex;          
             flex-wrap: wrap;
@@ -46,13 +46,12 @@
 
     
     @media screen and (min-width: 1200px) {        
-        .team__list { 
-            display: flex;
-            justify-content: space-between;
+        &__list { 
+            flex-wrap: nowrap;
          }
         .team__item {
             max-width: 270px;
-            margin-bottom: 0px;            
+            margin-bottom: 0;            
         }         
     }
 }
