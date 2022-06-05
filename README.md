@@ -1,1 +1,1 @@
-https://alexfkr9.github.io/SA_html/goit-markup-hw-08/index.html
+https://alexfkr9.github.io/SA_html/goit-js-hw-06/index.html
